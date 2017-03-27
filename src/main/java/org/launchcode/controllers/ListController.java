@@ -19,6 +19,7 @@ public class ListController {
     static HashMap<String, String> columnChoices = new HashMap<>();
 
     public ListController () {
+
         columnChoices.put("core competency", "Skill");
         columnChoices.put("employer", "Employer");
         columnChoices.put("location", "Location");

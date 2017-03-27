@@ -12,6 +12,22 @@
 
     <!-- TODO #3 - Use the same list display from search.html -->
 
+    <div class="container body-content">
+
+        <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+
+        <table th:each="job : ${jobs}"  >
+            <tr th:each="anything : ${job} ">
+                <td  style="font-weight:bold" th:text="${anything.key}"> </td>
+                <td th:text="${anything.value}"> </td>
+            </tr>
+            <tr>*****************************************</tr>
+            <tr>*****************************************</tr>
+        </table>
+
+
+    </div>
+
 </div>
 
 </body>
